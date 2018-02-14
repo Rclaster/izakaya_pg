@@ -1,6 +1,7 @@
 <?php
 // DBとの接続
 require_once 'db/dbconnect.php';
+require('../vendor/autoload.php');
 $sql = "SELECT cart_pro_name, cart_pro_count, cart_pro_pri FROM `cart` WHERE 1";
 
 $result = $mysqli -> query($sql);
@@ -46,19 +47,19 @@ $mysqli->close();
 <section>
 	<div class="wh DSmenu">
 	<ul>
-		<a href="sarada.php"><li>サラダ</li></a>
-		<a href="yaki.php"><li>焼き物</li></a>
-		<a href="age.php"><li>揚げ物</li></a>
-		<a href="fish.php"><li>魚</li></a>
-		<a href="dessert.php"><li>デザート</li></a>
-		<a href="drink.php"><li>ドリンク</li></a>
+		<a href="subPage/sarada.php"><li>サラダ</li></a>
+		<a href="subPage/yaki.php"><li>焼き物</li></a>
+		<a href="subPage/age.php"><li>揚げ物</li></a>
+		<a href="subPage/fish.php"><li>魚</li></a>
+		<a href="subPage/dessert.php"><li>デザート</li></a>
+		<a href="subPage/drink.php"><li>ドリンク</li></a>
 	</ul>
 
 	<div class="waves-button">
-		<a href="card.php" class="waves-effect waves-light btn">クレジット登録</a>
-		<a href="qr.php" class="waves-effect waves-light btn">QRコード作成</a>
-		<a href="yaki.php" class="waves-effect waves-light btn list" style="width: 252px">注文リスト</a>
-		<a href="yaki.php" class="waves-effect waves-light btn list" style="width: 252px">おあいそ</a>
+		<a href="subPage/card.php" class="waves-effect waves-light btn">クレジット登録</a>
+		<a href="subPage/qr.php" class="waves-effect waves-light btn">QRコード作成</a>
+		<a href="subPage/yaki.php" class="waves-effect waves-light btn list" style="width: 252px">注文リスト</a>
+		<a href="subPage/yaki.php" class="waves-effect waves-light btn list" style="width: 252px">おあいそ</a>
 	</div>
 	
 	<!-- end-->
@@ -126,7 +127,7 @@ $mysqli->close();
 <div id="wrapper">
 	<main>
   		<section class="card">
-  			<a href="sarada.php">
+  			<a href="subPage/sarada.php">
 			  <img class="card-img" src="images/sarada.jpg" alt="">
 			  <div class="card-content">
 			    <h1 class="card-title">サラダ</h1>
@@ -135,7 +136,7 @@ $mysqli->close();
 		</section>
 
 		<section class="card">
-		    <a href="yaki.php">
+		    <a href="subPage/yaki.php">
 			  <img class="card-img" src="images/yaki.jpg" alt="">
 			  <div class="card-content">
 			    <h1 class="card-title">焼き物</h1>
@@ -144,7 +145,7 @@ $mysqli->close();
 		</section>
 
 		<section class="card">
-		  	<a href="age.php">
+		  	<a href="subPage/age.php">
 			  <img class="card-img" src="images/age.jpg" alt="">
 			  <div class="card-content">
 			    <h1 class="card-title">揚げ物</h1>
@@ -153,7 +154,7 @@ $mysqli->close();
 		</section>
 
 		<section class="card">
-		    <a href="fish.php">
+		    <a href="subPage/fish.php">
 			  <img class="card-img" src="images/fish.jpg" alt="">
 			  <div class="card-content">
 			    <h1 class="card-title">魚</h1>
@@ -162,7 +163,7 @@ $mysqli->close();
 		</section>
 
 		<section class="card">
-		    <a href="dessert.php">
+		    <a href="subPage/dessert.php">
 			  <img class="card-img" src="images/dessert.jpg" alt="">
 			  <div class="card-content">
 			    <h1 class="card-title">デザート</h1>
@@ -171,7 +172,7 @@ $mysqli->close();
 		</section>
 
 		<section class="card">
-		    <a href="drink.php">
+		    <a href="subPage/drink.php">
 			  <img class="card-img" src="images/drink.jpg" alt="">
 			  <div class="card-content">
 			    <h1 class="card-title">ドリンク</h1>
