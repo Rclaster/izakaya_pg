@@ -1,6 +1,6 @@
 <?php
 // DBとの接続
-require_once '../db/dbconnect.php';
+require('../db/dbconnect.php');
 require('../vendor/autoload.php');
 $sql = "SELECT cart_pro_name, cart_pro_count, cart_pro_pri FROM `cart` WHERE 1";
 
