@@ -1,6 +1,6 @@
 <?php
 // DBとの接続
-require_once '../db/dbconnect.php';
+require_once 'db/dbconnect.php';
 require('../vendor/autoload.php');
 $sql = "SELECT cart_pro_name, cart_pro_count, cart_pro_pri FROM `cart` WHERE 1";
 
@@ -28,17 +28,17 @@ $mysqli->close();
 <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
 <meta name="keywords" content="">
 <title>サイトトップ</title>
-<link rel='stylesheet' href='../css/materialize.css' />
-<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="../css/demo.css" rel="stylesheet">
-<link rel="stylesheet" href="../iconfont/material-icons.css">
-<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="../css/fakeLoader.css">
+<link rel='stylesheet' href='css/materialize.css' />
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/demo.css" rel="stylesheet">
+<link rel="stylesheet" href="iconfont/material-icons.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/fakeLoader.css">
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Chathura">
-<script src="../js/jquery1.7.2.min.js"></script>
-<script src="../js/script.js"></script>
-<script src='../js/materialize.js'></script>
+<script src="js/jquery1.7.2.min.js"></script>
+<script src="js/script.js"></script>
+<script src='js/materialize.js'></script>
 </head>
 <body>
 	<div id="fakeLoader"></div>
@@ -114,7 +114,7 @@ $mysqli->close();
 <!-- メイン画像 -->
 <div id="mainBanner" class="mainImg">
   <div class="inner">
-		<img src="../images/main_pic2.jpg" alt="" width="500" height="150">
+		<img src="images/main_pic2.jpg" alt="" width="500" height="150">
         <div class="slogan">
 			<ol class="breadcrumb">
 				<li class="active"><a href="home.php"><span class= aria-hidden="true"></span>ホーム</a></li>
@@ -182,7 +182,7 @@ $mysqli->close();
 	</main>
 </div>
 <!-- / WRAPPER -->
-<script src="../js/fakeLoader.min.js"></script>
+<script src="js/fakeLoader.min.js"></script>
 <script>
 $("#fakeLoader").fakeLoader({
 	timeToHide: 1000,
